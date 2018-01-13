@@ -1,0 +1,47 @@
+digraph {
+  ranksep=.5
+  nodesep=.5
+  overlap="false"
+  node [color="black", shape="plain"]
+  edge [color="black", shape="vee"]
+
+
+  permit [label="Obtenir le permit de conduire"]
+  permit -> code
+  permit -> "Chréno"
+  permit -> "Circuit"
+
+
+  code [label="Passer le code de la route", fontcolor="green"]
+  code -> { plaques, regles, questions }
+
+  plaques [label="Apprendre les plaques", fontcolor="orange"]
+  pdng [label="Signaux de Danger", fontcolor="red"]
+  pitr [label="Signaux d'Interdiction", fontcolor="red"]
+  pobl [label="Signaux d'Obligation", fontcolor="blue"]
+  pind [label="Signaux d'Indication", fontcolor="blue"]
+  potr [label="Signaux divers", fontcolor="black"]
+  plaques -> pdng
+  plaques -> pitr
+  plaques -> pobl
+  plaques -> pind
+  plaques -> potr
+
+  regles [label="Règles générales"]
+  regles -> {
+    "Distances de frainage",
+    "Caractéristiques d'un véhicule léger"
+  }
+
+  questions [label="Comprendre les questions sur le document"]
+  questions -> { doublage, Stationnement }
+
+  doublage [label="Comment doubler"]
+  doublage -> { "Quand doubler", "Où doubler" }
+  "Quand doubler" -> "Quand ne pas doubler"
+  "Où doubler" -> "Où ne pas doubler"
+
+  Stationnement -> { "Quand stationer", "Où stationer" }
+  "Quand stationer" -> "Quand ne pas stationer"
+  "Où stationer" -> "Où ne pas stationer"
+}
