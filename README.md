@@ -22,9 +22,13 @@ cd pmac
 make
 ```
 
+- - -
+[Tweet this :bird:][tweet]
+
+
 [graphviz]: https://graphviz.gitlab.io/
 [`git`]: https://git-scm.com/
 [@ianmiell]: https://twitter.com/ianmiell
 [article]: https://zwischenzugs.com/2017/12/18/project-management-as-code-with-graphviz/
 [graphs]: https://en.wikipedia.org/wiki/Graph_theory
-[dot]: https://graphviz.gitlab.io/_pages/doc/info/lang.html
+[tweet]: https://goo.gl/LAfsPK
