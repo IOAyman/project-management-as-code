@@ -32,3 +32,4 @@ make
 [article]: https://zwischenzugs.com/2017/12/18/project-management-as-code-with-graphviz/
 [graphs]: https://en.wikipedia.org/wiki/Graph_theory
 [tweet]: https://goo.gl/LAfsPK
+[dot]: https://graphviz.gitlab.io/_pages/doc/info/lang.html
